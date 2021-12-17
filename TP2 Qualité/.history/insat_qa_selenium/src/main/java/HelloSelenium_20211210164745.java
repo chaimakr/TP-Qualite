@@ -32,6 +32,11 @@ public class HelloSelenium {
         Thread.sleep(3000);
 
 
+        //click to open the authentification window
+        WebElement authentificationButton = driver.findElement(By.cssSelector(".user-down > li > a "));
+        authentificationButton.click();
+        Thread.sleep(3000);
+
         //fill the authentification form
         WebElement emailInput = driver.findElement(By.cssSelector(".form-group > div > input"));
         emailInput.sendKeys("chaima050@gmail.com");
